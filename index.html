@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Bé Dưa Hấu ❤️</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="countdown-container">
+        <div class="countdown-content">
+            <h1>Sắp đến sinh nhật Bé Dưa Hấu rồi! 🎉</h1>
+            <p>Món quà bí mật sẽ được mở sau:</p>
+            <div class="timer-box">
+                <div class="time-item">
+                    <span id="days">00</span>
+                    <small>Ngày</small>
+                </div>
+                <div class="time-item">
+                    <span id="hours">00</span>
+                    <small>Giờ</small>
+                </div>
+                <div class="time-item">
+                    <span id="minutes">00</span>
+                    <small>Phút</small>
+                </div>
+                <div class="time-item">
+                    <span id="seconds">00</span>
+                    <small>Giây</small>
+                </div>
+            </div>
+            <p class="wait-note">Hẹn gặp em vào 00:00 ngày 05/02/2026 ❤️</p>
+        </div>
+    </div>
+
+    <div id="welcome-overlay" style="display: none;">
+        <div class="overlay-content">
+            <h1>Chào Bé Dưa Hấu! ❤️</h1>
+            <p>Đến giờ G rồi! Anh có món quà nhỏ tặng em.</p>
+            <button id="btn-enter">Nhấn để mở quà 🎁</button>
+        </div>
+    </div>
+
+    <div class="music-control" id="musicBtn">
+        <i class="fas fa-play"></i>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="Dangrangto - Love is (Official MV).mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="heartsContainer"></div>
+
+    <section class="header-section">
+        <div class="content">
+            <h1 class="animate-text">Happy Birthday Bé Dưa Hấu 🎉</h1>
+            <p class="sub-text">05 • 02 • Một ngày đặc biệt</p>
+            <div class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="wishes-section">
+        <div class="container glass-box">
+            <h2 data-aos="fade-up">Happy Birthday Bé Dưa Hấu 🎂</h2>
+            
+            <p class="wish-line" data-aos="fade-up" data-aos-delay="200">
+                05/02 – Ngày một cô gái tuyệt vời ra đời.
+            </p>
+            
+            <p class="wish-line" data-aos="fade-up" data-aos-delay="400">
+                Cảm ơn em vì đã đến bên anh, <br>
+                mang theo nụ cười, sự dịu dàng <br>
+                và rất nhiều khoảnh khắc hạnh phúc.
+            </p>
+            
+            <div class="divider" data-aos="zoom-in">❤️</div>
+
+            <p class="wish-line" data-aos="fade-up" data-aos-delay="200">
+                Tuổi mới, anh chúc em <br>
+                luôn vui vẻ, luôn được yêu thương <br>
+                và luôn là chính em – <br>
+                người con gái anh trân trọng nhất.
+            </p>
+
+            <p class="wish-line highlight" data-aos="fade-up" data-aos-delay="400">
+                Dù sau này có bao nhiêu điều thay đổi,<br>
+                anh vẫn mong mình sẽ cùng em <br>
+                đi qua thật nhiều ngày sinh nhật nữa.
+            </p>
+
+            <h3 data-aos="zoom-in" data-aos-delay="600">Chúc mừng sinh nhật Bé Dưa Hấu ❤️</h3>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="swiper mySwiper" data-aos="fade-up">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="nhonhan.jpg" alt="Vy 1">
+                    <div class="caption">Bắt đầu từ ảnh này nhé bé  ☀️</div>
+                    <div class="click-hint"><i class="fas fa-search-plus"></i> Chạm để xem ảnh</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="bienvaem.jpg" alt="Vy 2">
+                    <div class="caption">Nếu bắt anh chọn biển hay em thì hihi a chọn emmmm ✈️</div>
+                    <div class="click-hint"><i class="fas fa-search-plus"></i> Chạm để xem ảnh</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="botcute.jpg" alt="Vy 3">
+                    <div class="caption">có thể bớt cute đi được không 💖</div>
+                    <div class="click-hint"><i class="fas fa-search-plus"></i> Chạm để xem ảnh</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="xinh.jpg" alt="Vy 4">
+                    <div class="caption">Xinh quá đi   🥰</div>
+                    <div class="click-hint"><i class="fas fa-search-plus"></i> Chạm để xem ảnh</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="nomui.jpg" alt="Vy 6">
+                    <div class="caption">Mũi nở lắm ròi chứ gì   🌻</div>
+                    <div class="click-hint"><i class="fas fa-search-plus"></i> Chạm để xem ảnh</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="bennhau.jpg" alt="Vy 7">
+                    <div class="caption">Nhưng hãy mãi bên nhau em nhé !❤️</div>
+                    <div class="click-hint"><i class="fas fa-search-plus"></i> Chạm để xem ảnh</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="dungma.jpg" alt="Vy 6">
+                    <div class="caption">Tiếp tục nè  🌻</div>
+                    <div class="click-hint"><i class="fas fa-search-plus"></i> Chạm để xem ảnh</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="sinhnhat.jpg" alt="Vy 6">
+                    <div class="caption">Ựa sao mà cứ quay quẩn trong đầu anh vậy  🌻</div>
+                    <div class="click-hint"><i class="fas fa-search-plus"></i> Chạm để xem ảnh</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="bungno.jpg" alt="Vy 6">
+                    <div class="caption">老婆，生日快乐 - HAPPY BIRTHDAY TO YOU🎁</div>
+                    <div class="click-hint"><i class="fas fa-search-plus"></i> Chạm để xem ảnh</div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="gift-section" data-aos="zoom-in">
+        <div class="gift-container" id="giftBox">
+            <p class="gift-hint">Có một món quà bí mật cho em 👇</p>
+            <div class="gift-icon">
+                <i class="fas fa-gift"></i>
+            </div>
+            <p class="click-me">Nhấn vào hộp quà nha!</p>
+        </div>
+    </section>
+
+    <section class="footer-section" id="footer">
+        <div class="content">
+            <h1 data-aos="zoom-in">Happy Birthday Bé Dưa Hấu ❤️</h1>
+            <p data-aos="fade-up" data-aos-delay="300">Always with you.</p>
+        </div>
+    </section>
+
+    <div id="qrModal" class="modal">
+        <div class="modal-content gift-popup">
+            <span class="close-btn">&times;</span>
+            <h2>🎁 Quà tặng độc quyền của bé nhe 🎁</h2>
+            <p class="gift-note">Em nhận được bộ "Voucher Tình Yêu" có giá trị vô thời hạn. Hãy sử dụng quyền lực này nhé! 👇</p>
+            
+            <div class="voucher-container">
+                <div class="voucher" style="--color: #ff9a9e; --rotate: -5deg;">
+                    <div class="voucher-left"><i class="fas fa-utensils"></i></div>
+                    <div class="voucher-right"><h3>Ăn gì cũng được</h3><p>Anh sẽ đưa em đi ăn món em thích.</p></div>
+                </div>
+                <div class="voucher" style="--color: #a1c4fd; --rotate: 3deg;">
+                    <div class="voucher-left"><i class="fas fa-heart"></i></div>
+                    <div class="voucher-right"><h3>Hóa giải giận dỗi</h3><p>Anh sẽ là người xin lỗi trước.</p></div>
+                </div>
+                <div class="voucher" style="--color: #f6d365; --rotate: -2deg;">
+                    <div class="voucher-left"><i class="fas fa-plane"></i></div>
+                    <div class="voucher-right"><h3>Một chuyến đi chơi</h3><p>Đến bất cứ đâu em muốn, miễn là cùng nhau.</p></div>
+                </div>
+            </div>
+            <p class="love-sign">Yêu em nhiều ❤️ - Tún Lin Bếu </p>
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
